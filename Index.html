@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dementia Data Mining Project – Research Showcase</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#6366f1; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .serif { font-family: Merriweather, Georgia, serif; }
+    .glass { background: rgba(255,255,255,.7); backdrop-filter: blur(10px); }
+    .chip { @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold border; }
+    .section { scroll-margin-top: 96px; }
+    /* Simple fade-in */
+    [data-reveal] { opacity: 0; transform: translateY(16px); transition: .6s ease; }
+    [data-reveal].show { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Navbar -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <nav class="glass border-b border-slate-200/60">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="#top" class="font-extrabold tracking-tight text-slate-900 text-lg">Dementia Data Mining</a>
+        <div class="hidden md:flex gap-6 text-sm">
+          <a href="#overview" class="hover:text-indigo-600">Overview</a>
+          <a href="#objectives" class="hover:text-indigo-600">Objectives</a>
+          <a href="#timeline" class="hover:text-indigo-600">Timeline</a>
+          <a href="#methodology" class="hover:text-indigo-600">Methodology</a>
+          <a href="#findings" class="hover:text-indigo-600">Findings</a>
+          <a href="#challenges" class="hover:text-indigo-600">Challenges</a>
+          <a href="#gallery" class="hover:text-indigo-600">Visuals</a>
+          <a href="#references" class="hover:text-indigo-600">References</a>
+        </div>
+        <a href="#download" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-indigo-600 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-indigo-500">Download</a>
+      </div>
+    </nav>
+  </header>
+
+<!-- Research Paper Header Section -->
+<section id="paper-section" class="relative section pt-28 pb-6 text-center bg-white border-b">
+  <h2 class="text-2xl font-bold">Research Paper Document</h2>
+  <p class="mt-2 text-slate-600">View the full research paper below (PDF embedded).</p>
+</section>
+
+<!-- Embedded PDF Viewer -->
+<section class="w-full flex justify-center py-6 bg-gray-50">
+  <iframe 
+    src="researchPaper.pdf"
+    width="80%" 
+    height="600px" 
+    class="border rounded-xl shadow"
+  ></iframe>
+</section>
+</section>
+
+  <!-- Hero -->
+  <section id="overview" class="relative section pt-28 pb-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <div data-reveal class="show">
+        <span class="chip border-indigo-200 text-indigo-700 bg-indigo-50">Team #9 • Elijah Whites • Eric To • Joseph Morales • Samip Basnet</span>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight">Exploring Dementia Progression with Data Mining</h1>
+        <p class="mt-4 text-slate-700 leading-relaxed">We investigate patterns and correlations in dementia using a longitudinal dataset and data mining techniques to support early intervention and better management strategies.</p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="chip border-slate-200">Python</span>
+          <span class="chip border-slate-200">Pandas</span>
+          <span class="chip border-slate-200">NumPy</span>
+          <span class="chip border-slate-200">Scikit‑Learn</span>
+          <span class="chip border-slate-200">Matplotlib</span>
+          <span class="chip border-slate-200">Seaborn</span>
+          <span class="chip border-slate-200">Excel</span>
+        </div>
+        <div class="mt-8 grid grid-cols-2 gap-4 text-center">
+          <div class="rounded-2xl border bg-white p-4">
+            <div class="text-3xl font-extrabold">400+</div>
+            <div class="text-xs uppercase tracking-wide text-slate-500">Patient Records</div>
+          </div>
+          <div class="rounded-2xl border bg-white p-4">
+            <div class="text-3xl font-extrabold">-0.687</div>
+            <div class="text-xs uppercase tracking-wide text-slate-500">MMSE ↔ CDR Correlation</div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal class="show">
+        <div class="relative rounded-3xl overflow-hidden shadow-lg border">
+          <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1600&auto=format&fit=crop" alt="Abstract neural network visualization" class="w-full h-80 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background & Objectives -->
+  <section class="section py-12 bg-white" id="objectives">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10">
+      <div data-reveal class="show">
+        <h2 class="text-2xl font-bold">Background</h2>
+        <ul class="mt-4 space-y-3 list-disc pl-6">
+          <li><span class="font-semibold">Definition:</span> Dementia is a syndrome marked by cognitive decline beyond normal aging, affecting memory, reasoning, and daily function.</li>
+          <li><span class="font-semibold">Global Impact:</span> Over 55 million people are affected worldwide; the burden is social, emotional, and economic.</li>
+          <li><span class="font-semibold">Research Challenge:</span> Complex interplay of age, cognition, and lifestyle; limited awareness and stigma impede early diagnosis and care.</li>
+          <li><span class="font-semibold">Project Focus:</span> Use data mining to uncover patterns that can inform earlier detection and care planning.</li>
+        </ul>
+      </div>
+      <div data-reveal class="show">
+        <h2 class="text-2xl font-bold">Research Questions</h2>
+        <ol class="mt-4 space-y-3 list-decimal pl-6">
+          <li>How do diseases and brain injuries influence dementia severity?</li>
+          <li>What is the correlation between aging and dementia progression?</li>
+          <li>How do patient activities and lifestyle affect dementia risk?</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section py-12" id="timeline">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">Timeline & Division of Labor</h2>
+      <div class="mt-6 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Sept 27 – Oct 6</h3>
+          <p class="mt-2 text-sm">Dataset exploration, feasibility analysis, finalize questions.</p>
+          <p class="mt-1 text-xs text-slate-500">Eric To • Elijah White • Joseph Morales</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Oct 7 – Oct 31</h3>
+          <p class="mt-2 text-sm">Algorithms & visualizations for disease/injury impact and aging correlation.</p>
+          <p class="mt-1 text-xs text-slate-500">Joseph • Samip • Eric • Elijah</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Nov 1 – Dec 15</h3>
+          <p class="mt-2 text-sm">Activities risk analysis, progress checks, draft, peer review, submission.</p>
+          <p class="mt-1 text-xs text-slate-500">Entire Group</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="section py-12 bg-white" id="methodology">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">Methodology</h2>
+      <div class="mt-6 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Data Preparation</h3>
+          <ul class="mt-3 space-y-2 list-disc pl-6 text-sm">
+            <li>Imputation: MMSE → mean; SES → median</li>
+            <li>Encoding: Demented = 1, Non‑Demented = 2</li>
+            <li>Normalization for clustering</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Main Algorithms</h3>
+          <ul class="mt-3 space-y-2 list-disc pl-6 text-sm">
+            <li><span class="font-semibold">K‑Means clustering</span> on Age & CDR (and MMSE)</li>
+            <li>Cluster interpretation vs. diagnosis</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Visualizations</h3>
+          <ul class="mt-3 space-y-2 list-disc pl-6 text-sm">
+            <li>Correlation matrix & heatmap</li>
+            <li>Scatter plots & histograms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-3 gap-6 text-sm">
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Implementation Notes</h3>
+          <ul class="mt-3 space-y-2 list-disc pl-6">
+            <li>Manual K‑Means variant to suit overlapping clusters</li>
+            <li>Handled feature sparsity & imbalanced overlap</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Demo / Screenshots</h3>
+          <p class="mt-2 text-slate-600">Replace the placeholders below with your charts.</p>
+          <ul class="mt-3 space-y-2 list-disc pl-6">
+            <li>Histogram</li>
+            <li>Correlation Heatmap</li>
+            <li>Cluster Scatter Plot</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border p-6">
+          <h3 class="font-semibold">Evaluation</h3>
+          <ul class="mt-3 space-y-2 list-disc pl-6">
+            <li>Accuracy, Precision, Recall, F1‑score</li>
+            <li>Cluster‑to‑diagnosis alignment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Findings / Highlights -->
+  <section class="section py-12" id="findings">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">Key Findings</h2>
+      <div class="mt-6 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Correlations</h3>
+          <p class="mt-2 text-sm">Strong relationship between cognitive tests and severity: <span class="font-semibold">MMSE ↔ CDR = −0.687</span>. Age shows weak correlation with severity (<span class="font-semibold">−0.025</span>).</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Cluster Patterns</h3>
+          <ul class="mt-2 space-y-2 list-disc pl-6 text-sm">
+            <li>Cluster 0: Younger (~71) with severe dementia</li>
+            <li>Cluster 1: Older (~82) with milder dementia</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-semibold">Coverage</h3>
+          <p class="mt-2 text-sm">Answered RQ#2 (age ↔ progression); partial evidence for RQ#3 (activities & demographics) via correlation review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Challenges -->
+  <section class="section py-12 bg-white" id="challenges">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">Technical Challenges</h2>
+      <ul class="mt-4 space-y-3 list-disc pl-6">
+        <li>Limited feature set (Age, MMSE, CDR) constrained model accuracy.</li>
+        <li>Missing values in key variables required careful imputation.</li>
+        <li>Overlapping characteristics between mild and non‑demented groups complicated clustering.</li>
+        <li>Manual algorithm tuning for convergence and interpretability.</li>
+        <li>Clear visualization of clusters and correlations required multiple plot types.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery / Screenshots Placeholders -->
+  <section class="section py-12" id="gallery">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">Project Visuals</h2>
+      <p class="mt-2 text-slate-600">Drop your exported images (PNG/JPG) into your project and update the <code>src</code> attributes below.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <figure class="rounded-2xl overflow-hidden border bg-white">
+          <img src="Histogram.png" alt="Histogram of key variables" class="w-full h-56 object-cover">
+          <figcaption class="p-3 text-sm text-center">Histogram</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border bg-white">
+          <img src="corr-heatmap.png" alt="Correlation matrix heatmap" class="w-full h-56 object-cover">
+          <figcaption class="p-3 text-sm text-center">Correlation Matrix Heatmap</figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border bg-white">
+          <img src="cluster.png" alt="Cluster scatter plot" class="w-full h-56 object-cover">
+          <figcaption class="p-3 text-sm text-center">Cluster Scatter Plot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="section py-12 bg-white" id="references">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold">References</h2>
+      <ol class="mt-4 space-y-3 list-decimal pl-6 text-sm">
+        <li>Battineni, G., Amenta, F., & Chintalapudi, N. (2019). Data for: <em>Machine Learning in Medicine: Classification and Prediction of Dementia by Support Vector Machines</em>. Mendeley Data (V1). https://doi.org/10.17632/tsy6rbc5d4.1</li>
+        <li>Barnes, C. (2022). <em>A Study on Psychometric Assessment Data for Autonomous Dementia Detection</em>. PETRA ’22, 383–389. https://doi.org/10.1145/3529190.3534726</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Download anchor -->
+  <section id="download" class="section py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <a href="#" onclick="window.print();return false;" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 text-white px-6 py-3 text-sm font-semibold shadow hover:bg-indigo-500">Print / Save as PDF</a>
+      <p class="mt-3 text-xs text-slate-500">Tip: Use your browser’s “Save as PDF” to export.</p>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-4">
+      <p>© <span id="year"></span> Dementia Data Mining – Team #9</p>
+      <p>Built with HTML + Tailwind • Accessible & responsive</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple reveal on scroll
+    const onScroll = () => {
+      document.querySelectorAll('[data-reveal]').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) el.classList.add('show');
+      });
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
